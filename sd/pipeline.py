@@ -6,6 +6,7 @@ from diffusers import StableDiffusionImg2ImgPipeline
 
 def run(input_image, prompt):
     import os
+    # Use Apple Metal Performance Shaders on Mac
     device = "mps"
     model_id_or_path = os.path.join(os.path.dirname(__file__), "checkpoint", "v2-1_768-ema-pruned.ckpt")
     pipeline = StableDiffusionImg2ImgPipeline.from_single_file(model_id_or_path, torch_dtype=torch.float16)
