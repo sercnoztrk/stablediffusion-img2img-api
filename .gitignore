@@ -2,4 +2,3 @@ sd/checkpoint/v2-1_768-ema-pruned.ckpt
 api/.DS_Store
 .DS_Store
 .venv
-.gitignore
